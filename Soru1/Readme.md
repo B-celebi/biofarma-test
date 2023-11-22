@@ -50,5 +50,5 @@ Birinci sorunun çözümü burada bulunmaktadır. Eğer JDK bilgisayarınızda y
     }
 
     Dipnot: Online IDE kullanacak olursanız solutionun üstüne  
-    _import java.util.HashSet;_  
+    import java.util.HashSet;  
     eklemeniz gerekecektir.
