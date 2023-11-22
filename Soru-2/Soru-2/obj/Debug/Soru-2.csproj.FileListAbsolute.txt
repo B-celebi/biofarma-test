@@ -1,0 +1,10 @@
+D:\csharpprojeleri\Soru-2\Soru-2\bin\Debug\Soru-2.exe.config
+D:\csharpprojeleri\Soru-2\Soru-2\bin\Debug\Soru-2.exe
+D:\csharpprojeleri\Soru-2\Soru-2\bin\Debug\Soru-2.pdb
+D:\csharpprojeleri\Soru-2\Soru-2\bin\Debug\Newtonsoft.Json.dll
+D:\csharpprojeleri\Soru-2\Soru-2\bin\Debug\Newtonsoft.Json.xml
+D:\csharpprojeleri\Soru-2\Soru-2\obj\Debug\Soru-2.csproj.AssemblyReference.cache
+D:\csharpprojeleri\Soru-2\Soru-2\obj\Debug\Soru-2.csproj.CoreCompileInputs.cache
+D:\csharpprojeleri\Soru-2\Soru-2\obj\Debug\Soru-2.csproj.CopyComplete
+D:\csharpprojeleri\Soru-2\Soru-2\obj\Debug\Soru-2.exe
+D:\csharpprojeleri\Soru-2\Soru-2\obj\Debug\Soru-2.pdb
