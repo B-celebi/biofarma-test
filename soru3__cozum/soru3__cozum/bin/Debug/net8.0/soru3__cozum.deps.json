@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "soru3__cozum/1.0.0": {
+        "runtime": {
+          "soru3__cozum.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "soru3__cozum/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Contact Sayfasi";
+}
+
+<div class="row text-center">
+    <h2>Contact Us</h2>
+</div>
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+    <form id="contactForm">
+        <div class="row mt-3">
+            <div class="col">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="col">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+        <label for="birthDate">Birth Date:</label>
+        <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+                </div>
+                <div class="col">
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="Istanbul">Istanbul</option>
+            <option value="Ankara">Ankara</option>
+            <option value="Izmir">Izmir</option>
+        </select>
+                </div>
+            </div>
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    function submitForm() {
+        var formData = {
+            FirstName: $("#firstName").val(),
+            LastName: $("#lastName").val(),
+            BirthDate: $("#birthDate").val(),
+            Age: $("#age").val(),
+            City: $("#city").val()
+        };
+        var responseMessage = document.createElement("h4");
+        responseMessage.innerText = "Submit basariyla alindi. CONSOLE'U KONTROL EDİNİZ.";
+        responseMessage.classList.add("text-center");
+        $("body").append(responseMessage);
+        $.ajax({
+            type: "POST",
+            url: "/Home/Contact",
+            data: JSON.stringify(formData),
+            contentType: "application/json",
+            success: function (response) {
+                console.log("Girilen bilgiler post edilmiştir. Aşağıda JSON olarak girdiğiniz bilgiler döndürülüyor.");
+                console.log(response);
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    }
+</script>
